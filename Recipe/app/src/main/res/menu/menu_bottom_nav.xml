@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_fork_spoon"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        />
+    <item
+        android:id="@+id/addStory"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        android:title="addStory"
+        />
+    <item
+        android:id="@+id/activityHistory"
+        android:icon="@drawable/ic_grade_black_24dp"
+        android:title="activityHistory"
+        />
+    <item
+        android:id="@+id/myPage"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="myPage"
+        />
+
+
+
+
+</menu>

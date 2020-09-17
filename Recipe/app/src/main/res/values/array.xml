@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="food_category">
+        <item>카테고리</item>
+        <item>@string/korean</item>
+        <item>@string/japanese</item>
+        <item>@string/chinese</item>
+        <item>@string/western</item>
+        <item>@string/snacks</item>
+        <item>@string/desert</item>
+        <item>@string/asian</item>
+        <item>@string/lunch_box</item>
+        <item>@string/fast_food</item>
+        <item>@string/source</item>
+        <item>@string/extras</item>
+    </string-array>
+</resources>

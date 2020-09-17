@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWindowBackGround">#FFFFFF</color>
+    <color name="colorContrast">#EAEAEA</color>
+    <color name="filter_label_normal">#8a8889</color>
+    <color name="filter_label_selected">#221f20</color>
+    <color name="color_option_menu">#303F9F</color>
+    <color name="card_background_color">#333639</color>
+<!--    <color name="like_or_add_list_color">#5EBBFF</color>-->
+    <color name="not_like_or_add_list_color">#000000</color>
+    <color name="search_recycler_item1_color">#FFFFFF</color>
+    <color name="search_recycler_item2_3_color">#ff3990</color>
+    <color name="selected_pick_color">#dd8899</color>
+    <color name="invisible">#00000000</color>
+    <color name="follow_color">#FFFFFF</color>
+    <color name="unfollow_color">#ff3990</color>
+</resources>

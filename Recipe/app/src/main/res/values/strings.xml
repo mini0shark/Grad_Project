@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Recipe</string>
+    <string name="server_client_id" translatable="false">357556578097-oh5es4nmr1lf5sbkoiqqg6etgeuq3chq.apps.googleusercontent.com</string>
+    <string name="server_client_id2" translatable="false"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_init_question_nickname_hint">구글 이름</string>
+    <string name="checkNickname">중복확인</string>
+
+    <!--    Fragments   -->
+    <string name="register_food_story">식사 자랑하기</string>
+    <string name="register_recipe">레시피 등록</string>
+
+    <string name="korean">한식</string>
+    <string name="japanese">일식</string>
+    <string name="chinese">중식</string>
+    <string name="western">양식</string>
+    <string name="snacks">분식</string>
+    <string name="desert">디저트</string>
+    <string name="asian">아시아음식</string>
+    <string name="lunch_box">도시락</string>
+    <string name="fast_food">피자/햄버거</string>
+    <string name="source">소스류</string>
+    <string name="extras">기타..</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="add_story">AddStory</string>
+    <string name="activity_history">ActivityHistory</string>
+    <string name="my_page">MyPage</string>
+</resources>

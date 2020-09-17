@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".T3RegisterFoodStory">
+    <ScrollView
+        android:id="@+id/scrollView_registerFoodStory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_registerFoodStory_mainLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+            <TextView
+                android:gravity="center_horizontal"
+                android:text="@string/register_food_story"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"/>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager_addFoodImage"
+                android:layout_marginTop="10dp"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+            <ImageButton
+                android:id="@+id/button_addImages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_add_to_photos_light_blue_24dp"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/editText_foodStoryContent"
+                    android:hint="내용 입력 ..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_line"
+                    android:lines="5"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:text="참조 레시피 등록..."
+                />
+            <LinearLayout
+                android:id="@+id/linearLayout_referenceRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="25dp"
+                android:layout_marginBottom="20dp"/>
+
+
+            <ImageButton
+                android:id="@+id/button_addReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_add_circle_light_blue_24dp"/>
+            <Button
+                android:id="@+id/button_registerFoodStory"
+                android:text="게시"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/frameLayout_registerFoodStory"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

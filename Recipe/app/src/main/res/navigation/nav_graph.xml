@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gragh"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="com.capston.recipe.Main1Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_t1_home">
+        <action
+            android:id="@+id/action_home_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_home_to_otherUserPage"
+            app:destination="@id/otherUserPage"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_home_to_chattingList"
+            app:destination="@id/chattingList"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <action
+            android:id="@+id/action_home_to_chatting"
+            app:destination="@id/chatting"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/search"
+        android:name="com.capston.recipe.Main2Search"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_t2_search" >
+        <action
+            android:id="@+id/action_search_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_search_to_searchDetail"
+            app:destination="@id/searchDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/addStory"
+        android:name="com.capston.recipe.Main3Registration"
+        android:label="fragment_add_story"
+        tools:layout="@layout/fragment_t3_registration" >
+        <action
+            android:id="@+id/action_addStory_to_registerFoodStory"
+            app:destination="@id/registerFoodStory"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_addStory_to_registerRecipe"
+            app:destination="@id/registerRecipe"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityHistory"
+        android:name="com.capston.recipe.Main4ActivityHistory"
+        android:label="fragment_activity_history"
+        tools:layout="@layout/fragment_t4_activity_history" >
+        <action
+            android:id="@+id/action_activityHistory_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_activityHistory_to_followList"
+            app:destination="@id/followList"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <action
+            android:id="@+id/action_activityHistory_to_t4StoryList"
+            app:destination="@id/t4StoryList"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_activityHistory_to_otherUserPage"
+            app:destination="@id/otherUserPage"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPage"
+        android:name="com.capston.recipe.Main5MyPage"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_t5_my_page" >
+        <action
+            android:id="@+id/action_myPage_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_myPage_to_editProfile"
+            app:destination="@id/editProfile"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_myPage_to_followList"
+            app:destination="@id/followList"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFoodStory"
+        android:name="com.capston.recipe.T3RegisterFoodStory"
+        android:label="fragment_register_food_story"
+        tools:layout="@layout/fragment_t3_register_food_story" >
+        <action
+            android:id="@+id/action_registerFoodStory_to_editMultipleImageFragment"
+            app:destination="@id/editMultipleImageFragment" />
+        <argument
+            android:name="approachRoot"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="recipeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerRecipe"
+        android:name="com.capston.recipe.T3RegisterRecipe"
+        android:label="fragment_register_recipe"
+        tools:layout="@layout/fragment_t3_register_recipe" >
+        <argument
+            android:name="approachRoot"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="recipeId"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_registerRecipe_to_editMultipleImageFragment"
+            app:destination="@id/editMultipleImageFragment"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetail"
+        android:name="com.capston.recipe.TARecipeDetail"
+        android:label="fragment_recipe_detail"
+        tools:layout="@layout/fragment_ta_recipe_detail" >
+        <argument
+            android:name="approachRoot"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="type"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_recipeDetail_self"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_recipeDetail_to_registerFoodStory"
+            app:destination="@id/registerFoodStory"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <argument
+            android:name="recipeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_recipeDetail_to_otherUserPage"
+            app:destination="@id/otherUserPage"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_recipeDetail_to_registerRecipe"
+            app:destination="@id/registerRecipe"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_recipeDetail_to_chatting"
+            app:destination="@id/chatting"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchDetail"
+        android:name="com.capston.recipe.T2SearchDetail"
+        android:label="fragment_search_detail"
+        tools:layout="@layout/fragment_t2_search_detail" >
+        <action
+            android:id="@+id/action_searchDetail_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+        <action
+            android:id="@+id/action_searchDetail_to_otherUserPage"
+            app:destination="@id/otherUserPage"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"  />
+    </fragment>
+    <fragment
+        android:id="@+id/otherUserPage"
+        android:name="com.capston.recipe.TAOtherUserPage"
+        android:label="fragment_other_user_page"
+        tools:layout="@layout/fragment_ta_other_user_page" >
+        <argument
+            android:name="userId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_otherUserPage_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+        <action
+            android:id="@+id/action_otherUserPage_to_followList"
+            app:destination="@id/followList"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <action
+            android:id="@+id/action_otherUserPage_to_chatting"
+            app:destination="@id/chatting"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.capston.recipe.T5EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_t5_edit_profile" />
+    <fragment
+        android:id="@+id/editMultipleImageFragment"
+        android:name="com.capston.recipe.EditMultipleImageFragment"
+        android:label="activity_edit_multiple_image"
+        tools:layout="@layout/activity_edit_multiple_image" />
+    <fragment
+        android:id="@+id/followList"
+        android:name="com.capston.recipe.TAFollowList"
+        android:label="fragment_follow_list"
+        tools:layout="@layout/fragment_ta_follow_list" >
+        <action
+            android:id="@+id/action_followList_to_otherUserPage"
+            app:destination="@id/otherUserPage"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <argument
+            android:name="type"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="userId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/t4StoryList"
+        android:name="com.capston.recipe.T4StoryList"
+        android:label="fragment_t4_story_list"
+        tools:layout="@layout/fragment_t4_story_list" >
+        <action
+            android:id="@+id/action_t4StoryList_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <argument
+            android:name="recipeId"
+            app:argType="integer" />
+        <argument
+            android:name="recipeName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatting"
+        android:name="com.capston.recipe.Chatting"
+        android:label="fragment_chatting"
+        tools:layout="@layout/fragment_chatting" >
+        <argument
+            android:name="recipeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_chatting_to_recipeDetail"
+            app:destination="@id/recipeDetail"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <argument
+            android:name="opponentUserId"
+            android:defaultValue="-1" />
+    </fragment>
+    <fragment
+        android:id="@+id/chattingList"
+        android:name="com.capston.recipe.ChattingList"
+        android:label="fragment_chatting_list"
+        tools:layout="@layout/fragment_chatting_list" >
+        <action
+            android:id="@+id/action_chattingList_to_chatting"
+            app:destination="@id/chatting"
+            app:enterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down"/>
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InitQuestionFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_user_nickName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="9"
+                    android:cursorVisible="false"
+                    android:hint="@string/fragment_init_question_nickname_hint" />
+
+                <ImageView
+                    android:id="@+id/imageView_checkNickName"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:tag="asdklfjaskldfjlk"
+                    android:src="@drawable/ic_clear_black_24dp" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton_nickName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="구글계정의 이름 사용" />
+
+                <RadioButton
+                    android:id="@+id/radioButton_nickName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="새로 생성" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button_nicknameCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/checkNickname" />
+
+            <EditText
+                android:id="@+id/editText_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="Simple Introduce"
+                android:textSize="22sp"
+                android:cursorVisible="false"
+                android:layout_margin="10dp"
+                android:maxLines="3" />
+        </LinearLayout>
+        <TextView
+            android:text="좋아하는 음식"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"/>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/korean"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/japanese"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chinese"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/western"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snacks"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox6"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desert"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox7"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asian"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lunch_box"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fast_food"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/source"
+                android:layout_marginStart="10dp"
+                />
+            <CheckBox
+                android:id="@+id/checkBox11"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extras"
+                android:layout_marginStart="10dp"
+                />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/button_submit"
+            android:text="시작하기"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
