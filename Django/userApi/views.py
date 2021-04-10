@@ -89,7 +89,7 @@ def get_user_page(request, pk):
 
 @api_view(['post'])
 def post_id_token(request):
-    client_id = ''
+    client_id = '클라이언트 아이디'
 
     # tok = request.GET.get('id_token')
     received_json_data = json.loads(request.body)
