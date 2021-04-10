@@ -89,7 +89,7 @@ def get_user_page(request, pk):
 
 @api_view(['post'])
 def post_id_token(request):
-    client_id = '357556578097-oh5es4nmr1lf5sbkoiqqg6etgeuq3chq.apps.googleusercontent.com'
+    client_id = ''
 
     # tok = request.GET.get('id_token')
     received_json_data = json.loads(request.body)
