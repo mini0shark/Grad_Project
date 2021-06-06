@@ -39,7 +39,7 @@
 + 글 좋아요, 북마크(recipelikerelation, recipewishlistrelation)
 
 ### 채팅 관계
-##### ![chattingSid](https://user-images.githubusercontent.com/13701383/120921219-94c69580-c6fd-11eb-8cae-7be024bb6e4f.png
+##### ![chattingSid](https://user-images.githubusercontent.com/13701383/120921219-94c69580-c6fd-11eb-8cae-7be024bb6e4f.png)
 ## 핵심 관계
 + 참여자(user)
 + 채팅(message)
