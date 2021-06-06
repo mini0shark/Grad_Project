@@ -57,12 +57,14 @@
 ---
 
 ## 구동 화면
-### 레시피 확인
-##### ![그림5](https://user-images.githubusercontent.com/13701383/120918014-32659900-c6ed-11eb-9f7e-dd838e1be52f.png)
 
 
 ### 홈 화면
 ##### ![그림6](https://user-images.githubusercontent.com/13701383/120918071-78226180-c6ed-11eb-8c9e-0cd63394adcc.png)
+
+
+### 레시피 확인
+##### ![그림5](https://user-images.githubusercontent.com/13701383/120918014-32659900-c6ed-11eb-9f7e-dd838e1be52f.png)
 
 
 ### 검색
