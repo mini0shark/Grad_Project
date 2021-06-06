@@ -12,10 +12,10 @@
  ### 구성
   ![구성도](https://user-images.githubusercontent.com/13701383/120916983-b61c8700-c6e7-11eb-8cca-df8b9d3cf6e5.png)
 
+# [맨 위로](#Grad_Project-Server)
 
 ## **Back-End 개발(Django)**
 ----
-
 
 
 ### 레시피 관계
@@ -53,6 +53,9 @@
 + 달린 레시피(recipecontainer)
 
 
+# [맨 위로](#Grad_Project-Server)
+
+
 ## **Front-End 개발(안드로이드)**
 ---
 
@@ -63,13 +66,16 @@
 ##### ![그림6](https://user-images.githubusercontent.com/13701383/120918071-78226180-c6ed-11eb-8c9e-0cd63394adcc.png)
 
 
-### 레시피 확인
-##### ![그림5](https://user-images.githubusercontent.com/13701383/120918014-32659900-c6ed-11eb-9f7e-dd838e1be52f.png)
-
-
 ### 검색
 ##### ![그림7](https://user-images.githubusercontent.com/13701383/120918074-7a84bb80-c6ed-11eb-8811-59ac8414f000.png)
 
 
 ### 유저 페이지
 ##### ![그림8](https://user-images.githubusercontent.com/13701383/120918075-7b1d5200-c6ed-11eb-8699-791f3f6ab05a.png)
+
+
+### 레시피 확인
+##### ![그림5](https://user-images.githubusercontent.com/13701383/120918014-32659900-c6ed-11eb-9f7e-dd838e1be52f.png)
+
+
+# [맨 위로](#Grad_Project-Server)
